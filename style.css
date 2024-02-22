@@ -1,0 +1,197 @@
+body{
+    margin: 0;
+    font-family: 'Fredoka', sans-serif;
+    background-color:#000;
+    color: #fff;
+}
+a{
+    text-decoration: none;
+}
+
+/* animation */
+.leafs{
+    position: absolute;
+    top: 20px;
+    color: #FFFFCC;
+    animation: animate 5s linear forwards;
+}
+.leafs::before{
+    content: '\f06c';
+    font-family: fontAwesome;
+    text-shadow: 0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 30px #fff;
+
+}
+@keyframes animate{
+    0%{
+        transform:translateY(0) rotate(0deg);
+        opacity: 0.5;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        transform:translateY(300vh) rotate(360deg);
+        opacity: 0.5;
+    }
+}
+
+
+/** menubar**/
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    padding: 3px;
+}
+.menu ul{
+    padding: 0;
+}
+.menu li{
+    list-style: none;
+    display: inline-block;
+    margin:10px 10px;
+}
+.menu li a{
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    color:peru;
+}
+.menu li a::after{
+    content:' ';
+    width:0;
+    height: 4px;
+    background: maroon;
+    position: absolute;
+    bottom:-5px;
+    left: 0;
+    transition: 0.5s;
+}
+.menu li a:hover::after{
+    width:100%;
+}
+.logo{
+    display: inline-block;
+    font-size: 20px;
+    color: #fff;
+    width: fit-content;
+    height: fit-content;
+    padding: 3px;
+    position:relative;
+    top:5px;
+}
+/* resume button */
+.btn{
+    display:inline-block;
+    border: 1px solid #ff004f;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 6px;
+    padding:5px;
+    color: #fff;
+    margin-left: 30px;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background-color:#ff004f;
+}
+
+/**profolio picture**/
+.picture{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.picture img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.description{
+    text-align: center;
+    color: #fff;
+}
+/* Soical Icons */
+.social-icons{
+    display: flex;
+    justify-content: center;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin: 20px 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: peru;
+    transform: translateY(-5px);
+}
+
+/* About */
+#about{
+    padding: 80px 0;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.sub-title{
+    font-size: 45px;
+    font-weight: 600;
+}
+.tab-titles{
+    display: flex;
+    margin-left: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: ' ';
+    width: 0;
+    height: 3px;
+    background-color: #ff004f;
+    position:absolute;
+    left:0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents p{
+    margin:10px 0;
+    color: gray;
+}
+.tab-contents p span{
+    color: #b54769;
+    font-size: 14px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+
