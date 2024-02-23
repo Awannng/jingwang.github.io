@@ -37,21 +37,22 @@
         </script>
 
         <!--Menu Bar-->
-        <div class="menu">
-            <p class="logo">Hello World</p>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact Me</a></li>
-                    <a href="Jing_Wang_Resume.pdf" download class="btn">Resume</a>
-                </ul> 
-            </nav>
+        <div class="container">
+                <nav>
+                    <p class="logo">Hello World</p>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Contact Me</a></li>
+                        <a href="Jing_Wang_Resume.pdf" download class="btn">Resume</a>
+                    </ul> 
+                </nav>
         </div>
 
+
         <!--Caption-->
-        <div>
+        <div class="container">
             <div class="picture">
                 <img src="/imgs/profoliopic.jpg" alt="pic">
             </div>
@@ -59,17 +60,19 @@
                 <h2>Hello,</h2>
                 <h1>I am Jing Wang</h1>
             </div>
+            
+            <!--Social Icon-->
+            <div class="social-icons">
+                <a href="https://github.com/Awannng"><i class="fa-brands fa-github"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
         </div>
 
-        <!--Social Icon-->
-        <div class="social-icons">
-            <a href="https://github.com/Awannng"><i class="fa-brands fa-github"></i></a>
-            <a href=""><i class="fa-brands fa-linkedin"></i></a>
-        </div>
+        
 
         <!--About Me-->
         <div id="about">
-            <div class="'container">
+            <div class="container">
                 <div class="row">
                     <div class="about-col-1">
                         <img src="imgs/profoliopic.jpg" alt="an image">
@@ -115,8 +118,25 @@
         </script>
             
         <!--Profolio-->
-        <div>
-            
+        <div id="porfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+
+                <div class="work-list">
+                    <div class="work">
+                        <h3>Currency Converter</h3>
+                        <p>Uses the live currency converter API to convert the money amount to different currencies. 
+                        This converter allows you to convert the amount interchangeable with USD, EUR, CHF, GBP, JPY, and CNY.</p>
+                        <a href="https://github.com/Awannng/CurrencyCoverter"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                    <div class="work">
+                        <h3>Hangman</h3>
+                        <p>This program is Hangman game that randomly select a word from three categories of movie, fruit, and sport.
+                        There is given hint and 12 attempts and 5 misses to guess the word.</p>
+                        <a href="https://github.com/Awannng/hangman"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 
