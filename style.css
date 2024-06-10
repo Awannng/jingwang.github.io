@@ -19,7 +19,7 @@ a{
 
 
 /* animation */
-.leafs{
+/* .leafs{
     position: absolute;
     top: 20px;
     color: #FFFFCC;
@@ -46,10 +46,11 @@ a{
         opacity: 0.5;
     }
 }
+*/
 
 .container{
     padding: 10px 10%;
-}
+} 
 
 
 /** menubar**/
