@@ -17,41 +17,9 @@ a{
     text-decoration: none;
 }
 
-
-/* animation */
-/* .leafs{
-    position: absolute;
-    top: 20px;
-    color: #FFFFCC;
-    animation: animate 5s linear forwards;
-}
-.leafs::before{
-    content: '\f06c';
-    font-family: fontAwesome;
-    text-shadow: 0 0 5px #fff,
-    0 0 10px #fff,
-    0 0 30px #fff;
-
-}
-@keyframes animate{
-    0%{
-        transform:translateY(0) rotate(0deg);
-        opacity: 0.5;
-    }
-    50%{
-        opacity: 0.5;
-    }
-    100%{
-        transform:translateY(200vh) rotate(360deg);
-        opacity: 0.5;
-    }
-}
-*/
-
 .container{
     padding: 10px 10%;
 } 
-
 
 /** menubar**/
 nav{
@@ -109,12 +77,13 @@ nav li a:hover::after{
 /* resume button */
 .btn{
     display:inline-block;
-    border: 1px solid #fff;
+    border: 2px solid #fff;
     width: fit-content;
     height: fit-content;
     border-radius: 6px;
     padding:5px;
     color: #fff;
+    font-weight: 600;
     margin-left: 40px;
     transition: background 0.5s;
 }
@@ -134,16 +103,16 @@ nav li a:hover::after{
     height: 150px;
     border-color: #DCF2F1;
     border-radius: 50%;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .description{
     text-align: center;
     color: #fff;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 .description h1{
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 
@@ -168,36 +137,33 @@ nav li a:hover::after{
 
 /* About */
 #about{
-    padding: 80px 0;
-    margin-top: 20px;
+    padding: 40px 0;
+    margin-top: 10px;
 }
 .row{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.about-col-1{
-    flex-basis: 35%;
-}
-.about-col-1 img{
-    width: 100%;
-    border-radius: 15px;
-}
 .about-col-2{
-    flex-basis: 60%;
+    flex-basis: 100%;
 }
 .sub-title{
     font-size: 45px;
     font-weight: 600;
 }
+.about-col-2 p{
+    font-size: 20px;
+    margin-top: 10px;
+}
 .tab-titles{
     display: flex;
     margin-left: 20px 0 40px;
-    margin-top: 20px;
+    margin-top: 20px;    
+    font-size: 30px;
 }
 .tab-links{
     margin-right: 50px;
-    font-size: 20px;
     font-weight: 500;
     cursor: pointer;
     position: relative;

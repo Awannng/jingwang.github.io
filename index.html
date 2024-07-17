@@ -21,7 +21,7 @@
                         <ul id="side-menu">
                             <li><a href="#header">Home</a></li>
                             <li><a href="#about">About</a></li>
-                            <li><a href="#porfolio">Portfolio</a></li>
+                            <li><a href="#porfolio">Profolio</a></li>
                             <a href="Jing_Wang_Resume.pdf" download class="btn">Resume</a>
                             <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
                         </ul> 
@@ -44,7 +44,7 @@
             <!--Social Icon-->
             <div class="social-icons">
                 <a href="https://github.com/Awannng"><i class="fa-brands fa-github"></i></a>
-                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href="www.linkedin.com/in/jing-wangw12"><i class="fa-brands fa-linkedin"></i></a>
             </div>
         </div>
 
@@ -53,16 +53,13 @@
         <div id="about">
             <div class="container">
                 <div class="row">
-                    <div class="about-col-1">
-                        <img src="imgs/profoliopic.jpg" alt="an image">
-                    </div>
-
                     <div class="about-col-2">
                         <h1 class="sub-title">About Me</h1>
                         <p>I am currently a Sophomore at Baruch College, majoring in Computer Science and minor in Mathematic. 
-                            Currently I am seeking for an internship in the Tech Field. My pursuing path is backend role.</p>
+                            As for now, I want to learn Web Development in the CTP Program. 
+                            One fun fact about me is played cello in high school.</p>
 
-                        <div class="tab-titles">
+                        <!-- <div class="tab-titles">
                             <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                             <p class="tab-links" onclick="opentab('experience')">Experience</p>
                             <p class="tab-links" onclick="opentab('education')">Education</p>
@@ -80,10 +77,10 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         
             
-        <!--Profolio-->
+        <!-- Profolio
         <div id="porfolio">
             <div class="container">
                 <h1 class="sub-title">My Work</h1>
@@ -103,31 +100,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        
+        </div> -->
 
-        <!--Background Animation-->
-        <script>
-            function leafs(){
-                let e = document.createElement('div');
-                e.setAttribute('class', 'leafs');
-                document.body.appendChild(e);
-                e.style.left = Math.random()* + innerWidth + 'px';
-
-                let size = Math.random * 12;
-                let duration = Math.random() * 10;
-
-                e.style.fontSize = 12 + size +'px';
-                e.style.animationDuration = 2 + duration+'s';
-
-                setTimeout(function(){
-                    document.body.removeChild(e);
-                }, 700)
-            }
-            setInterval(function(){
-                leafs()
-            },100)
-        </script>
         
         <!--About me click tab to show underline and text-->
         <script>
